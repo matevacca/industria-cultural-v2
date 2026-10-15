@@ -1,0 +1,19 @@
+{%- assign fecha_formato = include.valor | date: "%Y-%m-%d" -%}
+{%- assign dia = fecha_formato | slice: 8, 2 | plus: 0 -%}
+{%- assign mes = fecha_formato | slice: 5, 2 -%}
+{%- assign anio = fecha_formato | slice: 0, 4 -%}
+{%- case mes -%}
+  {%- when '01' -%}{%- assign mes_nombre = 'enero' -%}
+  {%- when '02' -%}{%- assign mes_nombre = 'febrero' -%}
+  {%- when '03' -%}{%- assign mes_nombre = 'marzo' -%}
+  {%- when '04' -%}{%- assign mes_nombre = 'abril' -%}
+  {%- when '05' -%}{%- assign mes_nombre = 'mayo' -%}
+  {%- when '06' -%}{%- assign mes_nombre = 'junio' -%}
+  {%- when '07' -%}{%- assign mes_nombre = 'julio' -%}
+  {%- when '08' -%}{%- assign mes_nombre = 'agosto' -%}
+  {%- when '09' -%}{%- assign mes_nombre = 'septiembre' -%}
+  {%- when '10' -%}{%- assign mes_nombre = 'octubre' -%}
+  {%- when '11' -%}{%- assign mes_nombre = 'noviembre' -%}
+  {%- when '12' -%}{%- assign mes_nombre = 'diciembre' -%}
+{%- endcase -%}
+{{- dia }} de {{ mes_nombre }} de {{ anio -}}

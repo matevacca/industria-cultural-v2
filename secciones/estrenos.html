@@ -45,7 +45,7 @@
         <div><p class="kicker">{{ nota.categoria | escape }} <span class="format">Nota</span></p>
         <h2 class="headline"><a href="{{ nota.url | relative_url }}">{{ nota.title | escape }}</a></h2>
         <p class="dek">{{ nota.bajada | escape }}</p>
-        <p class="metadata">Por {{ nota.autor | escape }} · {{ nota.fecha | escape }}</p></div>
+        <p class="metadata">Por {{ nota.autor | escape }} · {% include fecha-es.html valor=nota.fecha %}</p></div>
       </article>
       {% endfor %}
 

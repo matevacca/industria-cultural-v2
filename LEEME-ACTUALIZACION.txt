@@ -1,0 +1,15 @@
+INDUSTRIA CULTURAL V2 — ACTUALIZACIÓN EDITORIAL
+
+Incluye autores seleccionables, calendario de fechas y visualización de fechas en español (ejemplo: 14 de octubre de 2026).
+
+IMPORTANTE: COPIAR EL CONTENIDO DE ESTA CARPETA EN LA RAÍZ DEL REPOSITORIO industria-cultural-v2, MANTENIENDO LAS CARPETAS. No eliminar archivos existentes.
+
+El archivo .pages.yml contiene la configuración de Pages CMS. En algunos equipos Windows puede ocultar el punto al descargar: debe llamarse EXACTAMENTE .pages.yml.
+
+Se incorpora _includes/fecha-es.html y se actualizan index.html, _layouts/articulo.html y las 4 páginas en secciones/.
+
+La fecha se guarda internamente como AAAA-MM-DD para orden cronológico y compatibilidad, pero se muestra como D de mes de AAAA.
+
+Antes de reemplazar, en GitHub Desktop seleccionar Fetch origin y Pull origin si aparece; de esa manera se incluye la primera nota publicada desde Pages CMS. Luego pegar los archivos, revisar Changes, Commit y Push origin.
+
+Este paquete NO implementa borradores ni cambia las notas antiguas escritas a mano. Solo modifica la fecha de las nuevas notas generadas por Pages CMS.

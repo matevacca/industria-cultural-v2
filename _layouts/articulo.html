@@ -39,7 +39,7 @@
 <p class="kicker">{{ page.categoria | escape }} <span class="format">Nota</span></p>
 <h1 class="headline">{{ page.title | escape }}</h1>
 <p class="dek">{{ page.bajada | escape }}</p>
-<p class="metadata">Por {{ page.autor | escape }} · {{ page.fecha | escape }}</p>
+<p class="metadata">Por {{ page.autor | escape }} · {% include fecha-es.html valor=page.fecha %}</p>
 </header>
 {% if page.imagen and page.imagen != '' %}<figure class="article-figure"><img src="{{ page.imagen | escape }}" alt="{{ page.title | escape }}" loading="lazy">{% if page.epigrafe %}<figcaption>{{ page.epigrafe | escape }}</figcaption>{% endif %}</figure>{% endif %}
 <div class="article-body">{{ content }}</div>

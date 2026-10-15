@@ -32,12 +32,21 @@ content:
             - Análisis
       - name: autor
         label: Autor o autora
-        type: string
+        type: select
         required: true
+        options:
+          values:
+            - Tomás Luzzi
+            - Martina Cornejo
+            - Ernestina Escales
+            - Mateo Vacca
+            - Equipo de Industria Cultural
       - name: fecha
-        label: Fecha (AAAA-MM-DD)
-        type: string
+        label: Fecha de publicación
+        type: date
         required: true
+        options:
+          format: yyyy-MM-dd
       - name: imagen
         label: Imagen de portada
         type: image

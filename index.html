@@ -237,7 +237,7 @@
 {% for nota in ultimas limit: 6 %}
 <article class="section-story">
 {% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}
-<div><p class="kicker">{{ nota.categoria | escape }}</p><h2 class="headline"><a href="{{ nota.url | relative_url }}">{{ nota.title | escape }}</a></h2><p class="dek">{{ nota.bajada | escape }}</p><p class="metadata">Por {{ nota.autor | escape }} · {{ nota.fecha | escape }}</p></div>
+<div><p class="kicker">{{ nota.categoria | escape }}</p><h2 class="headline"><a href="{{ nota.url | relative_url }}">{{ nota.title | escape }}</a></h2><p class="dek">{{ nota.bajada | escape }}</p><p class="metadata">Por {{ nota.autor | escape }} · {% include fecha-es.html valor=nota.fecha %}</p></div>
 </article>
 {% endfor %}
 </div></section>
