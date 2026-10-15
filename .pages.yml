@@ -21,9 +21,15 @@ content:
         type: text
         required: true
       - name: categoria
-        label: Sección (Noticias, Estrenos, Efemérides o Análisis)
-        type: string
+        label: Sección
+        type: select
         required: true
+        options:
+          values:
+            - Noticias
+            - Estrenos
+            - Efemérides
+            - Análisis
       - name: autor
         label: Autor o autora
         type: string
