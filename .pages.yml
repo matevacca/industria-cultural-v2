@@ -9,7 +9,7 @@ content:
     format: yaml-frontmatter
     filename: "{primary}.md"
     view:
-      fields: [title, categoria, autor, fecha]
+      fields: [title, published, categoria, autor, fecha]
       primary: title
     fields:
       - name: title
@@ -20,6 +20,11 @@ content:
         label: Bajada
         type: text
         required: true
+      - name: published
+        label: Publicar en la web
+        type: boolean
+        default: false
+        description: "Desactivado = borrador. Activado = nota publicada."
       - name: categoria
         label: Sección
         type: select

@@ -38,7 +38,7 @@
 
     <header class="page-intro"><p class="kicker">Sección</p><h1 class="headline">Efemérides</h1><p class="dek">El pasado cinematográfico, recuperado y puesto en contexto.</p></header>
     <section class="section-list" aria-label="Publicaciones de Efemérides">
-      {% assign nuevas = site.articulos | where: "categoria", "Efemérides" | sort: "fecha" | reverse %}
+      {% assign nuevas = site.articulos | where_exp: "nota", "nota.published != false" | where: "categoria", "Efemérides" | sort: "fecha" | reverse %}
       {% for nota in nuevas %}
       <article class="section-story">
         {% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}

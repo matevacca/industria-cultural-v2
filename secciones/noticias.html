@@ -38,7 +38,7 @@
 
     <header class="page-intro"><p class="kicker">Sección</p><h1 class="headline">Noticias</h1><p class="dek">La actualidad de la industria cinematográfica.</p></header>
     <section class="section-list" aria-label="Publicaciones de Noticias">
-      {% assign nuevas = site.articulos | where: "categoria", "Noticias" | sort: "fecha" | reverse %}
+      {% assign nuevas = site.articulos | where_exp: "nota", "nota.published != false" | where: "categoria", "Noticias" | sort: "fecha" | reverse %}
       {% for nota in nuevas %}
       <article class="section-story">
         {% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}

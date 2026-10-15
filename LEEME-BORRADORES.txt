@@ -1,0 +1,23 @@
+INDUSTRIA CULTURAL V2 — BORRADORES
+
+Archivos incluidos: .pages.yml, index.html, secciones/{analisis,efemerides,estrenos,noticias}.html
+
+CÓMO FUNCIONA
+- Las notas nuevas en Pages CMS tienen el interruptor "Publicar en la web" desactivado por defecto (published: false).
+- Guardar en ese estado crea un borrador en el repositorio GitHub, pero Jekyll no genera una página pública individual.
+- La portada y las secciones omiten artículos con published: false.
+- Activar el interruptor y guardar vuelve a generar las páginas y añade la nota a los listados.
+- Las notas ya publicadas sin campo published siguen visibles.
+
+ATENCIÓN
+- Los borradores quedan en un repositorio GitHub PÚBLICO: cualquiera puede leer el Markdown allí. No son confidenciales.
+- La opción publicada no constituye aprobación por roles: cualquier colaborador con permisos de edición podrá cambiarla.
+- Al abrir una nota antigua, revisar el interruptor antes de guardar: si Pages CMS lo inicializa desactivado, podría despublicarse.
+- No usar una fecha futura si se espera visibilidad inmediata en Jekyll.
+
+PRUEBA RECOMENDADA
+1. Crear una nota llamada "Prueba de borrador" con el interruptor apagado y guardar.
+2. Comprobar que no aparezca en la web ni en la URL individual.
+3. Abrir la nota, encender "Publicar en la web" y guardar.
+4. Verificar que ahora aparece en portada y sección, y se abre la página.
+5. Dejarla despublicada o eliminarla desde Pages CMS si se desea.

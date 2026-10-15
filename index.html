@@ -233,7 +233,7 @@
   <section class="editorial-block" aria-labelledby="nuevas-publicaciones">
 <div class="section-heading"><h2 id="nuevas-publicaciones">Últimas notas</h2><span>Publicaciones recientes</span></div>
 <div class="section-list">
-{% assign ultimas = site.articulos | sort: "fecha" | reverse %}
+{% assign ultimas = site.articulos | where_exp: "nota", "nota.published != false" | sort: "fecha" | reverse %}
 {% for nota in ultimas limit: 6 %}
 <article class="section-story">
 {% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}
