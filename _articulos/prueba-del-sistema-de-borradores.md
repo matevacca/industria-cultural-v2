@@ -1,7 +1,7 @@
 ---
 title: Prueba del sistema de borradores
 bajada: Esta noticia todavía no debe aparecer en la web.
-published: false
+published: true
 categoria: Noticias
 autor: Mateo Vacca
 fecha: 2026-10-15
