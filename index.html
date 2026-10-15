@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
@@ -228,7 +230,18 @@
 </div>
     </section>
 
-  </main>
+  <section class="editorial-block" aria-labelledby="nuevas-publicaciones">
+<div class="section-heading"><h2 id="nuevas-publicaciones">Últimas notas</h2><span>Publicaciones recientes</span></div>
+<div class="section-list">
+{% assign ultimas = site.articulos | sort: "fecha" | reverse %}
+{% for nota in ultimas limit: 6 %}
+<article class="section-story">
+{% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}
+<div><p class="kicker">{{ nota.categoria | escape }}</p><h2 class="headline"><a href="{{ nota.url | relative_url }}">{{ nota.title | escape }}</a></h2><p class="dek">{{ nota.bajada | escape }}</p><p class="metadata">Por {{ nota.autor | escape }} · {{ nota.fecha | escape }}</p></div>
+</article>
+{% endfor %}
+</div></section>
+</main>
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">

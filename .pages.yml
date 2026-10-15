@@ -1,0 +1,44 @@
+media:
+  input: img/notas
+  output: /industria-cultural-v2/img/notas
+content:
+  - name: articulos
+    label: Nuevas notas
+    type: collection
+    path: _articulos
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, categoria, autor, fecha]
+      primary: title
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: bajada
+        label: Bajada
+        type: text
+        required: true
+      - name: categoria
+        label: Sección (Noticias, Estrenos, Efemérides o Análisis)
+        type: string
+        required: true
+      - name: autor
+        label: Autor o autora
+        type: string
+        required: true
+      - name: fecha
+        label: Fecha (AAAA-MM-DD)
+        type: string
+        required: true
+      - name: imagen
+        label: Imagen de portada
+        type: image
+      - name: epigrafe
+        label: Epígrafe y créditos de la imagen
+        type: string
+      - name: body
+        label: Texto de la nota
+        type: rich-text
+        required: true

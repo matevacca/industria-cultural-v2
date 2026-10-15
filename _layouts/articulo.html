@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plantilla de nota de Industria Cultural. Contenido periodístico pendiente.">
+  <!-- Retirar noindex cuando se publique contenido real. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ page.title | escape }} · Industria Cultural</title>
+  <link rel="icon" href="{{ site.baseurl }}/img/logo/industria-cultural.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+  <script src="{{ site.baseurl }}/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container masthead">
+      <a class="brand" href="{{ site.baseurl }}/index.html" aria-label="Industria Cultural, inicio">
+        <img src="{{ site.baseurl }}/img/logo/industria-cultural.jpeg" width="92" height="92" alt="Logo de Industria Cultural: una mascota con forma de rollo de película y una claqueta.">
+        <span><span class="brand-name">Industria Cultural</span><span class="brand-tagline">Mirar el entretenimiento desde otro lado.</span></span>
+      </a>
+      <p class="edition-label">Cine desde todos sus ángulos<strong>Periodismo · Cultura · Industria</strong></p>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion-principal">Menú</button>
+    </div>
+    <nav class="nav-shell" id="navegacion-principal" aria-label="Navegación principal">
+      <div class="container"><ul class="nav-links"><li><a href="{{ site.baseurl }}/index.html">Inicio</a></li>
+<li><a href="{{ site.baseurl }}/secciones/estrenos.html">Estrenos</a></li>
+<li><a href="{{ site.baseurl }}/secciones/efemerides.html">Efemérides</a></li>
+<li><a href="{{ site.baseurl }}/secciones/analisis.html">Análisis</a></li>
+<li><a href="{{ site.baseurl }}/secciones/noticias.html">Noticias</a></li>
+<li><a href="{{ site.baseurl }}/quienes-somos.html">Quiénes somos</a></li></ul></div>
+    </nav>
+  </header>
+  
+  <main id="contenido" class="container" tabindex="-1">
+<nav class="breadcrumb" aria-label="Ruta de lectura"><a href="{{ site.baseurl }}/index.html">Inicio</a> / <a href="{{ site.baseurl }}/secciones/{{ page.categoria | downcase | replace: 'á', 'a' | replace: 'é', 'e' }}.html">{{ page.categoria | escape }}</a></nav>
+<article>
+<header class="article-header">
+<p class="kicker">{{ page.categoria | escape }} <span class="format">Nota</span></p>
+<h1 class="headline">{{ page.title | escape }}</h1>
+<p class="dek">{{ page.bajada | escape }}</p>
+<p class="metadata">Por {{ page.autor | escape }} · {{ page.fecha | escape }}</p>
+</header>
+{% if page.imagen and page.imagen != '' %}<figure class="article-figure"><img src="{{ page.imagen | escape }}" alt="{{ page.title | escape }}" loading="lazy">{% if page.epigrafe %}<figcaption>{{ page.epigrafe | escape }}</figcaption>{% endif %}</figure>{% endif %}
+<div class="article-body">{{ content }}</div>
+</article>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><p class="footer-name">Industria Cultural</p><p class="footer-tagline">Mirar el entretenimiento desde otro lado.</p></div>
+        <div><h2>El medio</h2><ul class="footer-links"><li><a href="../index.html">Inicio</a></li>
+<li><a href="../secciones/estrenos.html">Estrenos</a></li>
+<li><a href="../secciones/efemerides.html">Efemérides</a></li>
+<li><a href="../secciones/analisis.html">Análisis</a></li>
+<li><a href="../secciones/noticias.html">Noticias</a></li>
+<li><a href="../quienes-somos.html">Quiénes somos</a></li></ul></div>
+        <div><h2>Ver / Escuchar</h2><p><a href="https://www.instagram.com/industriafilm/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+<p><a href="https://www.youtube.com/@IndustriaCulturalok" target="_blank" rel="noopener noreferrer">YouTube</a></p></div>
+      </div>
+      <div class="footer-bottom"><span>© Industria Cultural</span></div>
+    </div>
+  </footer>
+</body>
+</html>

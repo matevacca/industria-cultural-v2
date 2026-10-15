@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
@@ -36,6 +38,17 @@
 
     <header class="page-intro"><p class="kicker">Sección</p><h1 class="headline">Análisis</h1><p class="dek">Una mirada interpretativa, crítica y de profundidad sobre lo que vemos.</p></header>
     <section class="section-list" aria-label="Publicaciones de Análisis">
+      {% assign nuevas = site.articulos | where: "categoria", "Análisis" | sort: "fecha" | reverse %}
+      {% for nota in nuevas %}
+      <article class="section-story">
+        {% if nota.imagen and nota.imagen != '' %}<img src="{{ nota.imagen | escape }}" alt="" loading="lazy">{% endif %}
+        <div><p class="kicker">{{ nota.categoria | escape }} <span class="format">Nota</span></p>
+        <h2 class="headline"><a href="{{ nota.url | relative_url }}">{{ nota.title | escape }}</a></h2>
+        <p class="dek">{{ nota.bajada | escape }}</p>
+        <p class="metadata">Por {{ nota.autor | escape }} · {{ nota.fecha | escape }}</p></div>
+      </article>
+      {% endfor %}
+
      <article class="section-story">
   <a href="../notas/analisis-ejemplo.html">
     <img src="../img/notas/RESIDENTPORTADA.avif" alt="Zach Cregger en la presentación de Resident Evil">

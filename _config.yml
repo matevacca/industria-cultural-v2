@@ -1,0 +1,17 @@
+title: Industria Cultural
+url: "https://matevacca.github.io"
+baseurl: "/industria-cultural-v2"
+markdown: kramdown
+collections:
+  articulos:
+    output: true
+    permalink: /articulos/:name/
+defaults:
+  - scope:
+      path: ""
+      type: articulos
+    values:
+      layout: articulo
+exclude:
+  - README-CMS.md
+  - .pages.yml
