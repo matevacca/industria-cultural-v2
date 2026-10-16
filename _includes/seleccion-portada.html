@@ -1,0 +1,33 @@
+{%- assign elegido = include.seleccion -%}
+{%- assign noticia = nil -%}
+{%- if elegido.origen == 'nueva' and elegido.nueva != blank -%}
+  {%- assign pagina_path = elegido.nueva | remove_first: '/' -%}
+  {%- for candidata in site.articulos -%}
+    {%- if candidata.path == pagina_path and candidata.published != false -%}
+      {%- assign noticia = candidata -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- for antigua in site.data.notas_historicas -%}
+    {%- if antigua.id == elegido.historica -%}
+      {%- assign noticia = antigua -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if noticia -%}
+  {%- assign enlace = noticia.url | relative_url -%}
+  {%- assign foto = noticia.imagen -%}
+  {%- assign categoria_url = noticia.categoria | downcase -%}
+  {%- if categoria_url == 'análisis' -%}{%- assign categoria_url = 'analisis' -%}{%- endif -%}
+  {%- if categoria_url == 'efemérides' -%}{%- assign categoria_url = 'efemerides' -%}{%- endif -%}
+  {%- assign categoria_url = '/secciones/' | append: categoria_url | append: '.html' | relative_url -%}
+<article class="{{ include.estilo }}">
+{% if include.estilo == 'lead' and foto != blank %}<a href="{{ enlace }}"><img src="{{ foto | relative_url | escape }}" alt="" loading="eager"></a>{% endif %}
+<p class="kicker"><a href="{{ categoria_url }}">{{ noticia.categoria | escape }}</a></p>
+{% if include.estilo == 'lead' %}<h1 class="headline"><a href="{{ enlace }}">{{ noticia.title | escape }}</a></h1>{% else %}<h2 class="headline"><a href="{{ enlace }}">{{ noticia.title | escape }}</a></h2>{% endif %}
+<p class="dek">{{ noticia.bajada | escape }}</p>
+<p class="metadata">Por {{ noticia.autor | escape }} · {% include fecha-es.html valor=noticia.fecha %}</p>
+</article>
+{%- endif -%}

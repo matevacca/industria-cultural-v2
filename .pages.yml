@@ -62,3 +62,156 @@ content:
         label: Texto de la nota
         type: rich-text
         required: true
+  - name: portada
+    label: Administrar portada
+    type: file
+    path: _data/portada.yml
+    fields:
+      - name: principal
+        label: Noticia principal
+        type: object
+        fields:
+          - name: origen
+            label: Tipo de artículo
+            type: select
+            options:
+              values: [historica, nueva]
+          - name: historica
+            label: Nota anterior (usar si tipo = historica)
+            type: select
+            options:
+              values:
+                - name: resident
+                  label: Resident Evil y los videojuegos
+                - name: paramount
+                  label: La fusión de Paramount y Warner
+                - name: cliff
+                  label: El regreso de Cliff Booth
+                - name: orgullo
+                  label: Orgullo y prejuicio
+          - name: nueva
+            label: Nota desde Pages CMS (usar si tipo = nueva)
+            type: reference
+            options:
+              collection: articulos
+              value: "{path}"
+              label: "{primary}"
+      - name: secundaria_1
+        label: Noticia secundaria 1
+        type: object
+        fields:
+          - name: origen
+            label: Tipo de artículo
+            type: select
+            options:
+              values: [historica, nueva]
+          - name: historica
+            label: Nota anterior (usar si tipo = historica)
+            type: select
+            options:
+              values:
+                - name: resident
+                  label: Resident Evil y los videojuegos
+                - name: paramount
+                  label: La fusión de Paramount y Warner
+                - name: cliff
+                  label: El regreso de Cliff Booth
+                - name: orgullo
+                  label: Orgullo y prejuicio
+          - name: nueva
+            label: Nota desde Pages CMS (usar si tipo = nueva)
+            type: reference
+            options:
+              collection: articulos
+              value: "{path}"
+              label: "{primary}"
+      - name: secundaria_2
+        label: Noticia secundaria 2
+        type: object
+        fields:
+          - name: origen
+            label: Tipo de artículo
+            type: select
+            options:
+              values: [historica, nueva]
+          - name: historica
+            label: Nota anterior (usar si tipo = historica)
+            type: select
+            options:
+              values:
+                - name: resident
+                  label: Resident Evil y los videojuegos
+                - name: paramount
+                  label: La fusión de Paramount y Warner
+                - name: cliff
+                  label: El regreso de Cliff Booth
+                - name: orgullo
+                  label: Orgullo y prejuicio
+          - name: nueva
+            label: Nota desde Pages CMS (usar si tipo = nueva)
+            type: reference
+            options:
+              collection: articulos
+              value: "{path}"
+              label: "{primary}"
+      - name: secundaria_3
+        label: Noticia secundaria 3
+        type: object
+        fields:
+          - name: origen
+            label: Tipo de artículo
+            type: select
+            options:
+              values: [historica, nueva]
+          - name: historica
+            label: Nota anterior (usar si tipo = historica)
+            type: select
+            options:
+              values:
+                - name: resident
+                  label: Resident Evil y los videojuegos
+                - name: paramount
+                  label: La fusión de Paramount y Warner
+                - name: cliff
+                  label: El regreso de Cliff Booth
+                - name: orgullo
+                  label: Orgullo y prejuicio
+          - name: nueva
+            label: Nota desde Pages CMS (usar si tipo = nueva)
+            type: reference
+            options:
+              collection: articulos
+              value: "{path}"
+              label: "{primary}"
+  - name: equipo
+    label: Quiénes somos · equipo y redes
+    type: file
+    path: _data/equipo.yml
+    fields:
+      - name: integrantes
+        label: Integrantes de la redacción
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nombre}"
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+            required: true
+          - name: rol
+            label: Función
+            type: string
+          - name: foto
+            label: Fotografía
+            type: image
+          - name: instagram
+            label: Instagram personal (URL completa)
+            type: string
+      - name: instagram_medio
+        label: Instagram del medio
+        type: string
+      - name: youtube_medio
+        label: YouTube del medio
+        type: string

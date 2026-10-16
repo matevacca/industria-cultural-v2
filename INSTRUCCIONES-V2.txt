@@ -1,0 +1,12 @@
+Actualización Industria Cultural V2 · portada y equipo
+
+1. Sincronizar GitHub Desktop (Fetch/Pull).
+2. Copiar EL CONTENIDO de este paquete a la carpeta local del repositorio, manteniendo .pages.yml y _data, _includes.
+3. Revisar Changes, luego Commit y Push.
+4. Pages CMS: Administrar portada -> cada bloque elige tipo historica/nueva y la nota apropiada. Si se elige nueva, debe estar publicada y el campo "Nota desde Pages CMS" debe señalarla. Las opciones antiguas son Resident Evil, Paramount, Cliff Booth y Orgullo y prejuicio.
+5. Pages CMS: Quiénes somos · equipo y redes -> subir fotos desde el campo Fotografía de cada integrante y guardar.
+6. Verificar en V2 el diseño, portada, enlaces, fecha de las noticias y las tarjetas.
+
+NOTA: las nuevas notas se eligen mediante una referencia a la colección. Las antiguas usan el catálogo predeterminado. No se modifican notas creadas desde Pages CMS. Si la referencia de una nota nueva no se resuelve, el lugar queda vacío y hay que volver a elegir la nota en el editor.
+
+No se modificó la versión original de Industria Cultural.

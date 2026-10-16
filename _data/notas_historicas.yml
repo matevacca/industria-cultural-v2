@@ -1,0 +1,38 @@
+- id: resident
+  title: Resident Evil, ¿se terminó la maldición de las películas de videojuegos?
+  categoria: Análisis
+  autor: Tomás Luzzi
+  fecha: '2026-09-22'
+  imagen: /img/notas/RESIDENTPORTADA.avif
+  url: /notas/analisis-ejemplo.html
+  bajada: Tras el estreno del film más reciente de Zach Cregger, las comparaciones
+    con otras largometrajes basadas en clásicos del gaming, no se hicieron esperar.
+- id: paramount
+  title: Paramount da el primer paso para cumplir su ansiada fusión con Warner
+  categoria: Noticias
+  autor: Mateo Vacca
+  fecha: '2026-09-22'
+  imagen: /img/notas/FUSIONWARNER.jpg
+  url: /notas/noticias-ejemplo.html
+  bajada: Tras muchos idas y vueltas, disputas con fiscales generales y otros gigantes
+    como Netflix en el medio, Paramount logró sentar las bases para cumplir con su
+    cometido de una vez por todas.
+- id: cliff
+  title: 'El regreso de Cliff Booth: Netflix lanza el tráiler de la secuela dirigida
+    por David Fincher'
+  categoria: Estrenos
+  autor: Ernestina Escales
+  fecha: '2026-09-22'
+  imagen: /img/notas/CLIFF.JPG
+  url: /notas/estrenos-ejemplo.html
+  bajada: La plataforma de streaming presentó el tráiler oficial de la secuela derivada
+    de Érase una vez en… Hollywood.
+- id: orgullo
+  title: 21 años después, ¿por qué seguimos enamorándonos de Orgullo y prejuicio?
+  categoria: Efemérides
+  autor: Martina Cornejo
+  fecha: '2026-09-22'
+  imagen: /img/notas/ORGULLO.JPG
+  url: /notas/efemerides-ejemplo.html
+  bajada: La adaptación de Joe Wright llegó a los cines en 2005 y convirtió la novela
+    de Jane Austen en un clásico del cine romántico.

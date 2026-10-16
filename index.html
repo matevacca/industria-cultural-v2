@@ -38,96 +38,12 @@
 
     <div class="section-heading"><p class="section-name">En portada</p><span>Selección de la redacción</span></div>
     <section class="opening" aria-label="Historias destacadas">
-      <!-- Apertura elegida por la redacción. No se ordena automáticamente por fecha. -->
-      <article class="lead">
-
-  <img
-    src="img/notas/RESIDENTPORTADA.avif"
-    alt="">
-
-  <p class="kicker">
-    <a href="secciones/analisis.html">Análisis</a>
-    <span class="format">Nota</span>
-  </p>
-
-  <h1 class="headline">
-    <a href="notas/analisis-ejemplo.html">
-      Resident Evil, ¿se terminó la maldición de las películas de videojuegos?
-    </a>
-  </h1>
-
-  <p class="dek">
-    Tras el estreno del film más reciente de Zach Cregger, las comparaciones con otras largometrajes basadas en clásicos del gaming, no se hicieron esperar.
-  </p>
-
-  <p class="metadata">
-    Por Tomás Luzzi · 22 de septiembre de 2026
-  </p>
-
-</article>
-      <div class="secondary-list"><article class="secondary">
-
-  <p class="kicker">
-    <a href="secciones/noticias.html">Noticias</a>
-  </p>
-
-  <h2 class="headline">
-    <a href="notas/noticias-ejemplo.html">
-      Paramount da el primer paso para cumplir su ansiada fusión con Warner
-    </a>
-  </h2>
-
-  <p class="dek">
-    Tras muchos idas y vueltas, disputas con fiscales generales y otros gigantes como Netllix en el medio, Paramount logró sentar las bases para cumplir con su cometido de una vez por todas.
-  </p>
-
-  <p class="metadata">
-    Por: Mateo Vacca, 22 de septiembre
-  </p>
-
-</article>
-<article class="secondary">
-
-  <p class="kicker">
-    <a href="secciones/estrenos.html">Estrenos</a>
-  </p>
-
-  <h2 class="headline">
-    <a href="notas/estrenos-ejemplo.html">
-      El regreso de Cliff Booth: Netflix lanza el tráiler de la secuela dirigida por David Fincher
-    </a>
-  </h2>
-
-  <p class="dek">
-    La plataforma de streaming ha presentado el tráiler oficial de “Las nuevas desventuras de Cliff Booth”, la continuación derivada de “Érase una vez en…Hollywood”.
-  </p>
-
-  <p class="metadata">
-    Por Ernestina Escales, 22 de Septiembre
-  </p>
-
-</article>
-<article class="secondary">
-
-  <p class="kicker">
-    <a href="secciones/efemerides.html">Efemérides</a>
-  </p>
-
-  <h2 class="headline">
-    <a href="notas/efemerides-ejemplo.html">
-      21 años después, ¿por qué seguimos enamorándonos de Orgullo y prejuicio?
-    </a>
-  </h2>
-
-  <p class="dek">
-    La adaptación de Joe Wright llegó a los cines en 2005 y convirtió la novela de Jane Austen en un clásico del cine romántico.
-  </p>
-
-  <p class="metadata">
-    Por Martina Cornejo, 22 de Septiembre
-  </p>
-
-</article></div>
+      {% include seleccion-portada.html seleccion=site.data.portada.principal estilo="lead" %}
+      <div class="secondary-list">
+        {% include seleccion-portada.html seleccion=site.data.portada.secundaria_1 estilo="secondary" %}
+        {% include seleccion-portada.html seleccion=site.data.portada.secundaria_2 estilo="secondary" %}
+        {% include seleccion-portada.html seleccion=site.data.portada.secundaria_3 estilo="secondary" %}
+      </div>
     </section>
     <section class="editorial-block" aria-labelledby="ultimas">
       <div class="section-heading"><h2 id="ultimas">Últimas publicaciones</h2><span>La agenda del medio</span></div>
@@ -154,7 +70,7 @@
   </p>
 
   <p class="metadata">
-    Por: Mateo Vacca · 22 de septiembre
+    Por Mateo Vacca · 22 de septiembre de 2026
   </p>
 
 </article>
@@ -170,7 +86,7 @@
     <a href="notas/estrenos-ejemplo.html">El regreso de Cliff Booth: Netflix lanza el tráiler de la secuela dirigida por David Fincher</a>
   </h3>
   <p class="dek">La plataforma de streaming ha presentado el tráiler oficial de “Las nuevas desventuras de Cliff Booth”, la continuación derivada de “Érase una vez en…Hollywood”.</p>
-  <p class="metadata">Por Ernestina Escales, 22 de Septiembre</p>
+  <p class="metadata">Por Ernestina Escales · 22 de septiembre de 2026</p>
 </article>
 <article class="card">
   <a href="notas/efemerides-ejemplo.html">
@@ -184,7 +100,7 @@
     <a href="notas/efemerides-ejemplo.html">21 años después, ¿por qué seguimos enamorándonos de Orgullo y prejuicio?</a>
   </h3>
   <p class="dek">La adaptación de Joe Wright llegó a los cines en 2005 y convirtió la novela de Jane Austen en un clásico del cine romántico.</p>
-  <p class="metadata">Por Martina Cornejo, 22 de Septiembre</p>
+  <p class="metadata">Por Martina Cornejo · 22 de septiembre de 2026</p>
 </article></div>
       <nav class="section-access" aria-label="Explorar las secciones"><a href="secciones/estrenos.html">Estrenos</a>
 <a href="secciones/efemerides.html">Efemérides</a>

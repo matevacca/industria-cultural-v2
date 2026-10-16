@@ -1,0 +1,16 @@
+principal:
+  origen: historica
+  historica: resident
+  nueva: ''
+secundaria_1:
+  origen: historica
+  historica: paramount
+  nueva: ''
+secundaria_2:
+  origen: historica
+  historica: cliff
+  nueva: ''
+secundaria_3:
+  origen: historica
+  historica: orgullo
+  nueva: ''

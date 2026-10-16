@@ -191,3 +191,16 @@ main { padding-block: 38px 72px; }
   .container, .article-body, .article-header { width: 100%; }
   main { padding: 0; }
 }
+
+
+/* Redacción: retratos editables desde Pages CMS */
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 22px}
+.team-card{border:1px solid var(--line);background:#fff;min-width:0;overflow:hidden}
+.team-photo{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.team-photo-empty{display:grid;place-items:center;background:var(--placeholder);color:var(--red);font-family:var(--reading);font-size:2.5rem;font-weight:bold}
+.team-card-body{padding:16px}
+.team-card-body h3{font-size:1.15rem;margin:0 0 4px}
+.team-card-body p{color:var(--muted);font-size:.9rem}
+.team-card-body a{display:inline-block;margin-top:10px;font-size:.9rem;color:var(--red);font-weight:bold}
+.team-social{padding-top:12px}
+@media(max-width:560px){.team-grid{grid-template-columns:1fr}}
