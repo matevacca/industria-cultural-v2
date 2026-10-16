@@ -1,16 +1,12 @@
 principal:
   origen: historica
-  historica: resident
-  nueva: ''
+  historica: paramount
 secundaria_1:
   origen: historica
-  historica: paramount
-  nueva: ''
+  historica: resident
 secundaria_2:
   origen: historica
   historica: cliff
-  nueva: ''
 secundaria_3:
   origen: historica
   historica: orgullo
-  nueva: ''
