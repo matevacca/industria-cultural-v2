@@ -1,5 +1,5 @@
 ---
-title: "Amanecer en la cosecha': todo lo que se sabe sobre la nueva película de
+title: "Amanecer en la cosecha: todo lo que se sabe sobre la nueva película de
   'Los Juegos del Hambre'"
 bajada: La precuela basada en la novela de Suzanne Collins llegará a los cines
   en noviembre con duración récord y un elenco estelar.
