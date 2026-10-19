@@ -1,0 +1,4 @@
+ACTUALIZACION V2: últimas publicaciones automáticas y normalización de rutas de imágenes.
+Copiar index.html y _includes/seleccion-portada.html sobre el repositorio V2.
+ANTES de hacer Commit, verificar en GitHub Desktop que figuren sólo los dos archivos HTML y este README opcional.
+Si Wanda sigue sin imagen, confirmar en Pages CMS que el campo Imagen de portada contenga un archivo realmente subido.

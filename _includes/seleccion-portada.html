@@ -27,13 +27,22 @@
 {%- endif -%}
 {%- if noticia -%}
   {%- assign enlace = noticia.url | relative_url -%}
-  {%- assign foto = noticia.imagen -%}
+  {%- assign foto = noticia.imagen | append: '' -%}
+  {%- if foto != blank -%}
+    {%- unless foto contains '://' -%}
+      {%- assign prefijo_base = site.baseurl | append: '/' -%}
+      {%- if foto contains prefijo_base -%}
+        {%- assign foto = foto | remove_first: site.baseurl -%}
+      {%- endif -%}
+      {%- assign foto = foto | relative_url -%}
+    {%- endunless -%}
+  {%- endif -%}
   {%- assign categoria_url = noticia.categoria | downcase -%}
   {%- if categoria_url == 'análisis' -%}{%- assign categoria_url = 'analisis' -%}{%- endif -%}
   {%- if categoria_url == 'efemérides' -%}{%- assign categoria_url = 'efemerides' -%}{%- endif -%}
   {%- assign categoria_url = '/secciones/' | append: categoria_url | append: '.html' | relative_url -%}
 <article class="{{ include.estilo }}">
-{% if include.estilo == 'lead' and foto != blank %}<a href="{{ enlace }}"><img src="{{ foto | relative_url | escape }}" alt="" loading="eager"></a>{% endif %}
+{% if include.estilo == 'lead' and foto != blank %}<a href="{{ enlace }}"><img src="{{ foto | escape }}" alt="" loading="eager"></a>{% endif %}
 <p class="kicker"><a href="{{ categoria_url }}">{{ noticia.categoria | escape }}</a></p>
 {% if include.estilo == 'lead' %}<h1 class="headline"><a href="{{ enlace }}">{{ noticia.title | escape }}</a></h1>{% else %}<h2 class="headline"><a href="{{ enlace }}">{{ noticia.title | escape }}</a></h2>{% endif %}
 <p class="dek">{{ noticia.bajada | escape }}</p>
