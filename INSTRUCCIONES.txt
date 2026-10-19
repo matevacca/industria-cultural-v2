@@ -1,0 +1,13 @@
+INDUSTRIA CULTURAL V2 — REPARACIÓN DEL SELECTOR DE PORTADA
+
+1. En GitHub Desktop, elegí industria-cultural-v2 y hacé Fetch / Pull origin si corresponde.
+2. En Repository > Show in Explorer, abrí la carpeta del repositorio.
+3. Copiá SOLO la carpeta _includes de este paquete y aceptá reemplazar el archivo seleccion-portada.html.
+4. Comprobá que GitHub Desktop muestre un único archivo modificado: _includes/seleccion-portada.html.
+5. Commit y Push origin.
+6. Esperá a GitHub Pages y recargá la portada con Ctrl+F5.
+
+Se corrigió la búsqueda de artículos desde Pages CMS comparando rutas y nombres de archivo.
+Si no se encuentra un artículo nuevo o es un borrador, se mostrará el artículo histórico de respaldo elegido en Pages CMS.
+
+Si una selección nueva sigue sin reflejarse, revisar el valor guardado en _data/portada.yml y el estado de la compilación en GitHub Actions.

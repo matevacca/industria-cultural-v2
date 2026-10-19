@@ -1,14 +1,23 @@
 {%- assign elegido = include.seleccion -%}
 {%- assign noticia = nil -%}
 {%- if elegido.origen == 'nueva' and elegido.nueva != blank -%}
-  {%- assign pagina_path = elegido.nueva | remove_first: '/' -%}
+  {%- assign referencia = elegido.nueva | append: '' | replace: '\\', '/' | split: '?' | first | split: '#' | first -%}
+  {%- assign archivo = referencia | split: '/' | last -%}
+  {%- assign identificador = archivo | remove: '.markdown' | remove: '.md' | remove: '.html' -%}
   {%- for candidata in site.articulos -%}
-    {%- if candidata.path == pagina_path and candidata.published != false -%}
-      {%- assign noticia = candidata -%}
-      {%- break -%}
+    {%- assign nombre_archivo = candidata.path | split: '/' | last -%}
+    {%- assign slug_archivo = nombre_archivo | remove: '.markdown' | remove: '.md' -%}
+    {%- assign pagina_url = candidata.url | append: '' -%}
+    {%- if candidata.published != false -%}
+      {%- if candidata.path == referencia or slug_archivo == identificador or candidata.slug == identificador or pagina_url == referencia -%}
+        {%- assign noticia = candidata -%}
+        {%- break -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-{%- else -%}
+{%- endif -%}
+{%- comment -%}Si la nota nueva no se encuentra o no está publicada, mostramos la nota histórica elegida como respaldo.{%- endcomment -%}
+{%- if noticia == nil -%}
   {%- for antigua in site.data.notas_historicas -%}
     {%- if antigua.id == elegido.historica -%}
       {%- assign noticia = antigua -%}
