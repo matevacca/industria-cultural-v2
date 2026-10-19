@@ -11,8 +11,6 @@ fecha: 2026-10-18
 imagen: /industria-cultural-v2/img/notas/luca bruno AP.jpg
 epigrafe: C/ Luca Bruno (Associated Press)
 ---
-*A más de un año del estreno de la película, así se gestó la película de Fórmula Uno: 9 datos sobre la producción que compartió pista con la grilla oficial durante los fines de semana de carrera.*
-
 **1. Velocidad real sin dobles**
 
 Para evitar los efectos digitales y lograr un realismo absoluto en pantalla, el director Joseph Kosinksi y el productor Jerry Bruckheimer exigieron que los actores condujeran vehículos reales. Brad Pitt y Damson Idris se sometieron a intensos entrenamientos progresivos en monoplazas de Fórmula 3 y Fórmula 2 hasta superar los 290 km/h. Al finalizar el rodaje, Pitt quedó a solo cinco segundos de los tiempos de pilotos profesionales de F2.
@@ -49,6 +47,6 @@ La elección del coprotagonista no se limitó a pruebas de actuación en estudio
 
 La decisión de instalar cámaras apuntando directamente a la cara de los actores dentro del vehículo buscó registrar las microexpresiones genuinas provocadas por la aceleración y la velocidad. De esta manera se evitó el "*helmet acting*" (actuación fingida bajo el casco), garantizando que la tensión gestual fuera 100% real.
 
- 
 
- 
+
+&nbsp;
