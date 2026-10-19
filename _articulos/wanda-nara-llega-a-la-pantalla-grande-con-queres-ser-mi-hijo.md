@@ -7,11 +7,9 @@ published: true
 categoria: Estrenos
 autor: Martina Cornejo
 fecha: 2026-10-18
-imagen: /industria-cultural-v2/img/notas/WANDA.jpg
-epigrafe: C/ Clarín
+imagen: /industria-cultural-v2/img/notas/wanda-nara-y-agustin-bernasconi-2333295.jpg
+epigrafe: C/ Exitoína
 ---
-La conductora debuta como protagonista de cine en una comedia romántica dirigida por Hernán Guerschuny y coprotagonizada por Agustín Bernasconi. La película se estrena el 22 de octubre en los cines argentinos.
-
 Wanda Nara suma una nueva faceta a su carrera y llega por primera vez a la pantalla grande como protagonista. ¿Querés ser mi hijo?, una comedia romántica dirigida por Hernán Guerschuny, se estrenará el 22 de octubre en los cines de Argentina y tendrá a Nara junto a Agustín Bernasconi como protagonistas.
 
 En la película, Nara interpreta a Lucía, una mujer de 42 años que atraviesa un momento de quiebre después de descubrir que su pareja, con quien lleva 15 años de relación, le es infiel. Sin trabajo y con la necesidad de comenzar de nuevo, regresa a su antiguo departamento de soltera. Allí conoce a Javier, interpretado por Bernasconi, un joven vecino de 22 años cuya vida está marcada por las fiestas y que altera la tranquilidad de Lucía.
