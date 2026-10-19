@@ -1,12 +1,16 @@
 principal:
-  origen: historica
+  origen: nueva
   historica: paramount
+  nueva: _articulos/wanda-nara-llega-a-la-pantalla-grande-con-queres-ser-mi-hijo.md
 secundaria_1:
-  origen: historica
+  origen: nueva
   historica: resident
+  nueva: _articulos/la-mente-que-inspiro-a-los-grandes-villanos-del-cine.md
 secundaria_2:
-  origen: historica
+  origen: nueva
   historica: cliff
+  nueva: _articulos/amanecer-en-la-cosecha-todo-lo-que-se-sabe-sobre-la-nueva-pelicula-de-los-juegos-del-hambre.md
 secundaria_3:
-  origen: historica
+  origen: nueva
   historica: orgullo
+  nueva: _articulos/hay-looks-que-sobreviven-a-las-peliculas-que-convierte-un-vestuario-en-un-icono.md
