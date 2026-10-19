@@ -11,8 +11,6 @@ fecha: 2026-10-01
 imagen: /industria-cultural-v2/img/notas/dakota-johnson-anne-hathaway-y-josh-hartnett-2302275.jpg
 epigrafe: C/ Exitoína
 ---
-La adaptación de la novela bestseller de Colleen Hoover llegó a los cines argentinos con una trama de secretos, confesiones perturbadoras y una escritora atrapada entre la ficción y la realidad.
-
 Los secretos de una escritora reconocida y un manuscrito inquietante son el punto de partida de Verity: La sombra de un engaño, la adaptación cinematográfica de la novela homónima de Colleen Hoover. Con Anne Hathaway, Dakota Johnson y Josh Hartnett al frente del elenco, la película combina misterio, tensión psicológica y relaciones atravesadas por la manipulación y la obsesión. El largometraje dirigido por Michael Showalter llegó a los cines argentinos el 1 de octubre de 2026.
 
 La historia sigue a Lowen Ashleigh (Dakota Johnson), una escritora que atraviesa dificultades económicas y recibe una propuesta laboral inesperada: completar la serie de libros de Verity Crawford (Anne Hathaway), una exitosa autora que ya no puede continuar con su trabajo después de sufrir un accidente. Para cumplir con el encargo, Lowen se instala en la aislada propiedad de la familia Crawford, donde comienza a conocer aspectos desconocidos de la vida de la escritora.
