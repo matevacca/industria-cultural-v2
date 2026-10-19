@@ -12,8 +12,6 @@ fecha: 2026-10-18
 imagen: /industria-cultural-v2/img/notas/HZMMJWWWFZATFCCFE3MEVPWOKU.avif
 epigrafe: C/ El universo
 ---
-Un traje amarillo que define a una adolescente, un vestido negro frente a una joyería y un vestido de novia detrás de un corazón roto. Algunas prendas quedaron grabadas en la memoria colectiva porque, en el cine y las series, la ropa también puede contar historias.
-
 Hay escenas que se recuerdan por lo que sucede y otras por cómo se ven. A veces, alcanza con una prenda para volver a una película o serie: el traje amarillo a cuadros de Cher en Clueless, el vestido negro de Audrey Hepburn en Desayuno en Tiffany’s o el vestido de novia de Carrie Bradshaw en Sex and the City. Aunque pertenecen a historias y épocas diferentes, los tres looks comparten algo: trascendieron la pantalla y se convirtieron en imágenes reconocibles incluso para quienes no recuerdan todos los detalles de sus películas.
 
 Pero ¿qué hace que una elección de vestuario sobreviva al paso del tiempo? No alcanza con que una prenda sea linda o esté de moda. Su fuerza también depende de quién la lleva, de cómo aparece en escena y de lo que termina representando para el público.
@@ -34,4 +32,3 @@ Las redes sociales y las nuevas generaciones mantienen vivas esas imágenes: los
 
 Quizás por eso seguimos hablando de ciertos vestidos y trajes décadas después de su estreno. Porque, cuando el vestuario funciona como parte de la narración, una prenda puede terminar contando mucho más que una escena: puede convertirse en la imagen que todos recuerdan de una película.
 
- 
