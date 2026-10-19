@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
@@ -44,21 +46,9 @@
         <p>Priorizamos mostrar el lado B de la industria de una forma descontracturada y profesional. Buscamos una profundidad que invite a la reflexión y al pensamiento crítico, sin recurrir a polémicas ni al clickbait.</p>
         <p>Nos dirigimos a una audiencia de habla hispana interesada tanto en consumir entretenimiento como en preguntarse qué está consumiendo. Nuestro tono es distendido, crítico y cercano, con una mirada periodística.</p>
         <h2>La redacción</h2>
-        <div class="team-grid">
-          {% for integrante in site.data.equipo.integrantes %}
-          <article class="team-card">
-            {% if integrante.foto != blank %}
-            <img class="team-photo" src="{{ integrante.foto | relative_url | escape }}" alt="Retrato de {{ integrante.nombre | escape }}" loading="lazy">
-            {% else %}
-            <div class="team-photo team-photo-empty" role="img" aria-label="Foto de {{ integrante.nombre | escape }} pendiente de cargar"><span>IC</span></div>
-            {% endif %}
-            <div class="team-card-body"><h3>{{ integrante.nombre | escape }}</h3><p>{{ integrante.rol | escape }}</p>
-            {% if integrante.instagram != blank %}<a href="{{ integrante.instagram | escape }}" target="_blank" rel="noopener noreferrer">Instagram ↗</a>{% endif %}
-            </div>
-          </article>
-          {% endfor %}
-        </div>
-        <p class="team-social">Seguinos también en <a href="{{ site.data.equipo.instagram_medio | escape }}" target="_blank" rel="noopener noreferrer">Instagram</a> y <a href="{{ site.data.equipo.youtube_medio | escape }}" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
+        {% for integrante in site.data.equipo.integrantes %}
+        <p><strong>{{ integrante.nombre | escape }}</strong> · {{ integrante.rol | escape }}{% if integrante.instagram != blank %} · <a href="{{ integrante.instagram | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram de {{ integrante.nombre | escape }}">Instagram ↗</a>{% endif %}</p>
+        {% endfor %}
       </div>
       <aside class="about-aside" aria-labelledby="territorios">
         <h2 id="territorios">Nuestros territorios</h2>
