@@ -1,0 +1,12 @@
+/* Industria Cultural · perfiles fotográficos · opción A */
+.about-copy .team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin:22px 0 25px; }
+.about-copy .team-card { background:#fff; border:1px solid var(--line); min-width:0; overflow:hidden; }
+.about-copy .team-photo { display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; object-position:center; }
+.about-copy .team-photo-empty { display:grid; place-items:center; aspect-ratio:1/1; background:#eeeae1; color:var(--red); font-family:var(--reading); font-size:2.5rem; }
+.about-copy .team-card-body { padding:16px 17px 19px; }
+.about-copy .team-card-body h3 { margin:0 0 5px; font-family:var(--reading); font-size:1.23rem; line-height:1.2; }
+.about-copy .team-card-body p { margin:0; color:var(--muted); font-size:.91rem; line-height:1.5; }
+.about-copy .team-card-body a { display:inline-block; margin-top:11px; font-size:.91rem; font-weight:700; color:var(--red); text-decoration:underline; text-underline-offset:3px; }
+.about-copy .team-social { margin-top:18px; }
+@media(max-width:600px) { .about-copy .team-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:12px; } .about-copy .team-card-body{padding:12px;} .about-copy .team-card-body h3{font-size:1.05rem;} }
+@media(max-width:380px) { .about-copy .team-grid {grid-template-columns:1fr;} }

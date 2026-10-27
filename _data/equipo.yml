@@ -1,19 +1,19 @@
 integrantes:
-- nombre: Tomás Luzzi
-  rol: Conductor y redactor
-  foto: ''
-  instagram: https://www.instagram.com/tomylfilms/
-- nombre: Martina Cornejo
-  rol: Columnista y redactora
-  foto: ''
-  instagram: https://www.instagram.com/martucornejo.ic/
-- nombre: Ernestina Escales
-  rol: Columnista y redactora
-  foto: ''
-  instagram: https://www.instagram.com/ernesescales.ic/
-- nombre: Mateo Vacca
-  rol: Columnista y editor
-  foto: ''
-  instagram: https://www.instagram.com/mateovacca.ic/
+  - nombre: Martina Cornejo
+    rol: Columnista y redactora
+    foto: /img/equipo/martina-cornejo.webp
+    instagram: https://www.instagram.com/martucornejo.ic/
+  - nombre: Ernestina Escales
+    rol: Columnista y redactora
+    foto: /img/equipo/ernestina-escales.webp
+    instagram: https://www.instagram.com/ernesescales.ic/
+  - nombre: Tomás Luzzi
+    rol: Conductor y redactor
+    foto: /img/equipo/tomas-luzzi.webp
+    instagram: https://www.instagram.com/tomylfilms/
+  - nombre: Mateo Vacca
+    rol: Columnista y editor
+    foto: /img/equipo/mateo-vacca.webp
+    instagram: https://www.instagram.com/mateovacca.ic/
 instagram_medio: https://www.instagram.com/industriafilm/
 youtube_medio: https://www.youtube.com/@IndustriaCulturalok
