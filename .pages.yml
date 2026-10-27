@@ -215,3 +215,13 @@ content:
       - name: youtube_medio
         label: YouTube del medio
         type: string
+  - name: ultimo_capitulo
+    label: Último capítulo
+    type: file
+    path: _data/ultimo_capitulo.yml
+    fields:
+      - name: youtube_url
+        label: Enlace del capítulo en YouTube
+        type: string
+        required: true
+        description: Pegá el enlace de YouTube (youtu.be o youtube.com/watch). Se actualizan el reproductor y el botón de la portada.

@@ -71,6 +71,22 @@
       {% endfor %}
       </div>
     </section>
+{%- assign capitulo_url = site.data.ultimo_capitulo.youtube_url | default: 'https://youtu.be/cEIl1tDHPBA' | strip -%}
+{%- assign video_id = capitulo_url -%}
+{%- if capitulo_url contains 'youtu.be/' -%}
+  {%- assign video_id = capitulo_url | split: 'youtu.be/' | last -%}
+{%- elsif capitulo_url contains 'youtube.com/watch' or capitulo_url contains 'youtube.com/live/' -%}
+  {%- if capitulo_url contains 'v=' -%}
+    {%- assign video_id = capitulo_url | split: 'v=' | last -%}
+  {%- else -%}
+    {%- assign video_id = capitulo_url | split: '/live/' | last -%}
+  {%- endif -%}
+{%- elsif capitulo_url contains 'youtube.com/shorts/' -%}
+  {%- assign video_id = capitulo_url | split: '/shorts/' | last -%}
+{%- elsif capitulo_url contains 'youtube.com/embed/' -%}
+  {%- assign video_id = capitulo_url | split: '/embed/' | last -%}
+{%- endif -%}
+{%- assign video_id = video_id | split: '?' | first | split: '&' | first | split: '#' | first | split: '/' | first | strip -%}
     <section class="editorial-block" aria-labelledby="audiovisual">
       <div class="section-heading"><h2 id="audiovisual">Ver / Escuchar</h2><span>Producción propia</span></div>
       <div class="media-feature">
@@ -78,7 +94,7 @@
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/cEIl1tDHPBA"
+    src="https://www.youtube.com/embed/{{ video_id | escape }}"
     title="Industria Cultural: capítulo del programa"
     loading="lazy"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -99,7 +115,7 @@
     <p>
       <a
         class="pending"
-        href="https://www.youtube.com/watch?v=cEIl1tDHPBA"
+        href="https://www.youtube.com/watch?v={{ video_id | escape }}"
         target="_blank"
         rel="noopener">
         Ver también en YouTube
